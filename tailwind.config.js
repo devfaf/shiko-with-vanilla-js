@@ -4,6 +4,7 @@ module.exports = {
   theme: {
     fontFamily: {
       Pacifico: "Pacifico",
+      BYekan: "BYekan",
     },
     extend: {},
   },
