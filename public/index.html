@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,26 +9,40 @@
 <!-- npm run dev -->
 <body>
     <!-- Header -->
-    <header class="mt-4">
+    <header class="mt-4 sm:mt-8">
         <div class="mx-2">
-            <div class="flex justify-between px-2">
-                <div class="">
-                    <a href="">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" class="size-6">
+            <div class="grid justify-between grid-cols-2 px-2 px-8 sm:grid sm:grid-cols-3">
+
+                <div class="flex items-center gap-2 sm:justify-center sm:order-2">
+                    <a class="sm:hidden" href="">
+                        <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                        </svg>                  
+                    </a>
+                    <a class="text-xl sm:text-4xl font-Pacifico" href="">
+                        Shiko
+                    </a>
+                </div>
+
+                <div class="flex justify-end sm:justify-center sm:order-1 sm:flex sm:gap-2 sm:items-center">
+                    <a class="hidden sm:inline" href="">
+                        وارد شوید
+                    </a>
+                    <a class="" href="">
+                        <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
                           </svg>
                     </a>
                 </div>
-    
-                <div class="flex items-center justify-center gap-2">
-                    <a href="">
-                        SHIKO
-                    </a>
-                    <a href="">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" class="size-6">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                        </svg>                  
-                    </a>
+
+                <div class="flex items-center justify-center col-span-2 mt-3 sm:m-0 sm:col-span-1 sm:order-3">
+                    <div class="flex items-center w-full gap-2 px-2 py-1 bg-gray-100 rounded-sm">
+                        <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                        </svg>
+                        <input class="items-center w-full bg-gray-100 float-start" type="text" placeholder="جستجو کنید">
+                    </div>
+
                 </div>
             </div>
         </div>
