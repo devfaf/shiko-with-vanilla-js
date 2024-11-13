@@ -9,55 +9,98 @@
 <!-- npm run dev -->
 <body>
     <!-- Header -->
-    <header class="mt-4 sm:mt-8 font-BYekan">
-        <div class="mx-2 xl:mx-12">
-            <div class="grid justify-between grid-cols-2 px-4 sm:grid sm:grid-cols-3 lg:flex">
-
-                <div class="flex items-center gap-2 md:grow sm:justify-center sm:order-2 lg:grid-cols-3">
-                    <a class="sm:hidden" href="">
-                        <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                        </svg>                  
-                    </a>
-                    <a class="text-2xl sm:text-4xl font-Pacifico" href="">
-                        Shiko
-                    </a>
-                </div>
-
-                <div class="flex justify-end lg:w-56 sm:justify-start sm:order-1 sm:flex sm:gap-2 sm:items-center">
-                    <a class="" href="">
-                        <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
-                          </svg>
-                    </a>
-                    <a class="hidden sm:inline" href="">
-                        وارد شوید
-                    </a>
-                </div>
-
-                <div class="flex items-center justify-center col-span-2 mt-3 md:w-56 sm:m-0 sm:col-span-1 sm:order-3">
-                    <div class="flex items-center w-full gap-2 px-2 py-1 bg-gray-100 rounded-sm sm:gap-0">
-                        <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
-                        </svg>
-                        <input class="items-center w-full text-center bg-gray-100 sm:placeholder: float-start" type="text" placeholder="جستجو کنید">
+     <div class="wrapper">
+        <header class="relative z-50 mt-4 sm:mt-8 sm:mx-4 font-BYekan">
+            <div class="mx-2 xl:mx-12">
+                <div class="grid justify-between grid-cols-2 px-2 md:grid md:grid-cols-3 lg:flex">
+    
+                    <div class="flex items-center gap-2 md:grow md:justify-center md:order-2 lg:grid-cols-3">
+                        <a class="md:hidden" href="">
+                            <svg class="w-6 h-6 leading-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                            </svg>                  
+                        </a>
+                        <a class="text-2xl sm:text-4xl font-Pacifico" href="">
+                            Shiko
+                        </a>
+                    </div>
+    
+                    <div class="flex justify-end text-sm lg:w-56 md:justify-start md:order-1 md:flex md:gap-2 md:items-center">
+                        <a href="">
+                            <svg class="w-6 h-6 text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+                            </svg>
+                        </a>
+                        <a class="hidden text-gray-500 md:inline" href="">
+                            وارد شوید
+                        </a>
+                    </div>
+    
+                    <div class="grid max-w-full col-span-2 text-sm md:flex md:col-span-1 lg:w-56 sm:justify-start sm:order-3 sm:gap-2 sm:items-center">
+                        <div class="flex w-full p-1 my-4 bg-gray-100 rounded-sm sm:bg-transparent sm:pb-1 sm:border-b-2 sm:border-gray-400 ">
+                            <svg class="w-6 h-6 text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                                </svg>
+                            <input class="w-full text-gray-700 bg-gray-100 outline-none sm:bg-transparent placeholder:text-gray-500 ps-2 sm:placeholder:float-start" type="text" placeholder="جستجو کنید">  
+                        </div>
                     </div>
 
                 </div>
             </div>
+        </header>
+            
+        <!-- slider -->
+        <div class="grid w-full grid-cols-1 sm:top-0 sm:left-0 sm:absolute sm:w-full sm:max-w-full -z-10 slider">
+            <div class="bg-blue-300 sm:absolute sm:top-0 sm:left-0">
+                <img src="../src/assets/pics/slider-img/1.png" alt="children clothes banner">
+            </div>
+
+            <div>
+                <img src="../src/assets/pics/slider-img/2.png" alt="children clothes banner">
+            </div>
+
+            <div>
+                <img src="../src/assets/pics/slider-img/3.png" alt="children clothes banner">
+            </div>
+
+            <div>
+                <img src="../src/assets/pics/slider-img/4.png" alt="children clothes banner">
+            </div>
+
+            <div>
+                <img src="../src/assets/pics/slider-img/5.png" alt="children clothes banner">
+            </div>
         </div>
+     </div>
 
         <!-- main -->
-         <main>
-            <section>
-                <div>
-                    
-
+    <main class="relative">
+        <section class="relative">
+            <!-- <div class="relative slider">
+                <div class="absolute top-0 left-0 w-full max-w-full bg-blue-300">
+                    <img src="../src/assets/pics/slider-img/1.png" alt="children clothes banner">
                 </div>
-            </section>
-         </main>
 
-    </header>
+                <div>
+                    <img src="../src/assets/pics/slider-img/2.png" alt="children clothes banner">
+                </div>
+
+                <div>
+                    <img src="../src/assets/pics/slider-img/3.png" alt="children clothes banner">
+                </div>
+
+                <div>
+                    <img src="../src/assets/pics/slider-img/4.png" alt="children clothes banner">
+                </div>
+
+                <div>
+                    <img src="../src/assets/pics/slider-img/5.png" alt="children clothes banner">
+                </div>
+            </div> -->
+
+        </section>
+    </main>
+
 
     <script src="../src/app.js"></script>
 </body>
