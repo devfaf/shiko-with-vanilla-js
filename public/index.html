@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shiko Shop</title>
     <link rel="stylesheet" href="../src/output.css">
+    <script src="../src/app.js" defer></script>
 </head>
 <!-- npm run dev -->
 <body>
@@ -50,25 +51,35 @@
         </header>
             
         <!-- slider -->
-        <div class="grid w-full grid-cols-1 sm:top-0 sm:left-0 sm:absolute sm:w-full sm:max-w-full -z-10 slider">
-            <div class="bg-blue-300 sm:absolute sm:top-0 sm:left-0">
-                <img src="../src/assets/pics/slider-img/1.png" alt="children clothes banner">
+        <div class="relative w-full h-96 sm:top-0 sm:left-0 sm:absolute sm:w-full sm:max-w-full -z-10 slider">
+            <div class="relative bg-blue-300 sm:absolute sm:top-0 sm:left-0 slides">
+                <div class="absolute sm:static">
+                    <img src="../src/assets/pics/slider-img/1.png" alt="children clothes banner">
+                </div>
             </div>
 
-            <div>
-                <img src="../src/assets/pics/slider-img/2.png" alt="children clothes banner">
+            <div class="relative bg-blue-300 sm:absolute sm:top-0 sm:left-0 slides">
+                <div class="absolute sm:static">
+                    <img src="../src/assets/pics/slider-img/2.png" alt="shoes banner">
+                </div>
             </div>
 
-            <div>
-                <img src="../src/assets/pics/slider-img/3.png" alt="children clothes banner">
+            <div class="relative bg-blue-300 sm:absolute sm:top-0 sm:left-0 slides">
+                <div class="absolute sm:static">
+                    <img src="../src/assets/pics/slider-img/3.png" alt="watch banner">
+                </div>
             </div>
 
-            <div>
-                <img src="../src/assets/pics/slider-img/4.png" alt="children clothes banner">
+            <div class="relative bg-blue-300 sm:absolute sm:top-0 sm:left-0 slides">
+                <div class="absolute sm:static">
+                    <img src="../src/assets/pics/slider-img/4.png" alt="women clothes banner">
+                </div>
             </div>
 
-            <div>
-                <img src="../src/assets/pics/slider-img/5.png" alt="children clothes banner">
+            <div class="relative bg-blue-300 sm:absolute sm:top-0 sm:left-0 slides">
+                <div class="absolute sm:static">
+                    <img src="../src/assets/pics/slider-img/5.png" alt="sunglasses banner">
+                </div>
             </div>
         </div>
      </div>
@@ -101,7 +112,5 @@
         </section>
     </main>
 
-
-    <script src="../src/app.js"></script>
 </body>
 </html>
