@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>فروشگاه اینترنتی لباس شیکو</title>
     <link rel="stylesheet" href="../src/output.css">
+    <link rel="icon" href="../src/assets/logo/favicon.ico">
     <script src="../src/app.js" defer></script>
 </head>
 <!-- npm run dev -->
 <body>
     <!-- Header -->
-     <div class="wrapper">
+     <div class="h-full wrapper sm:h-56 md:h-[352px] lg:h-[454px] xl:h-[643px]">
         <header class="relative z-50 mt-4 sm:mt-8 sm:mx-4 font-BYekan">
             <div class="mx-2 xl:mx-12">
                 <div class="grid justify-between grid-cols-2 px-2 md:grid md:grid-cols-3 lg:flex">
@@ -51,7 +52,7 @@
         </header>
         
         <!-- slider -->
-        <div class="w-full h-56 md sm:top-0 sm:left-0 sm:absolute sm:w-full sm:max-w-full -z-10 slider md:h-96 lg:h-[486px] xl:h-[675px] font-BYekan">
+        <!-- <div class="w-full h-56 md sm:top-0 sm:left-0 sm:absolute sm:w-full sm:max-w-full -z-10 slider md:h-96 lg:h-[486px] xl:h-[675px] font-BYekan cursor-pointer">
 
             <div class="relative w-full h-full bg-gradient-to-t from-orange-500 to-amber-300 animate-slide-slow slides">
                 <div class="absolute bottom-0 left-0 grid w-full grid-cols-2 md:gap-4 md:w-full place-items-center sm:w-auto">
@@ -65,7 +66,7 @@
             </div>
 
 
-            <div class="relative w-full h-full bg-gradient-to-t from-cyan-600 to-zinc-100 animate-slide-slow slides">
+            <div class="relative w-full h-full cursor-pointer bg-gradient-to-t from-cyan-600 to-zinc-100 animate-slide-slow slides">
                 <div class="absolute bottom-0 left-0 grid w-full grid-cols-2 md:gap-4 md:w-full place-items-center sm:w-auto">
                     <div class="flex items-center justify-center text-center">
                         <span class="p-4 text-3xl md:text-5xl">اینجا کیفیت گارانتی شده</span>
@@ -76,7 +77,7 @@
                 </div>
             </div>
 
-            <div class="relative w-full h-full bg-gradient-to-t from-stone-500 to-stone-100 animate-slide-slow slides">
+            <div class="relative w-full h-full cursor-pointer bg-gradient-to-t from-stone-500 to-stone-100 animate-slide-slow slides">
                 <div class="absolute bottom-0 left-0 grid w-full grid-cols-2 md:gap-4 md:w-full place-items-center sm:w-auto">
                     <div class="flex items-center justify-center text-center">
                         <span class="p-4 text-3xl md:text-5xl">اکسسوری های بی همتا</span>
@@ -87,7 +88,7 @@
                 </div>
             </div>
 
-            <div class="relative w-full h-full via-pink-300 bg-gradient-to-t from-pink-500 to-pink-100 animate-slide-slow slides">
+            <div class="relative w-full h-full cursor-pointer via-pink-300 bg-gradient-to-t from-pink-500 to-pink-100 animate-slide-slow slides">
                 <div class="absolute bottom-0 left-0 grid w-full grid-cols-2 md:gap-4 md:w-full place-items-center sm:w-auto">
                     <div class="flex items-center justify-center text-center">
                         <span class="p-4 text-3xl md:text-5xl">خرید فقط با یک کلیک</span>
@@ -98,7 +99,7 @@
                 </div>
             </div>
             
-            <div class="relative w-full h-full via-cyan-300 bg-gradient-to-t from-blue-500 to-blue-200 animate-slide-slow slides">
+            <div class="relative w-full h-full cursor-pointer via-cyan-300 bg-gradient-to-t from-blue-500 to-blue-200 animate-slide-slow slides">
                 <div class="absolute bottom-0 left-0 grid w-full grid-cols-2 md:gap-4 md:w-full place-items-center sm:w-auto">
                     <div class="flex items-center justify-center text-center">
                         <span class="p-4 text-3xl md:text-5xl">با شیکو شیک شو</span>
@@ -109,12 +110,66 @@
                 </div>
             </div>
         </div>
+    </div> -->
 
+    <!-- dots -->
+     <div class="z-50 items-center justify-center hidden w-full gap-1 my-4 md:flex row">
+        <span class="w-3 h-3 border-2 border-black rounded-full dot"></span>
+        <span class="w-3 h-3 border-2 border-black rounded-full dot"></span>
+        <span class="w-3 h-3 border-2 border-black rounded-full dot"></span>
+        <span class="w-3 h-3 border-2 border-black rounded-full dot"></span>
+        <span class="w-3 h-3 border-2 border-black rounded-full dot"></span>
      </div>
 
         <!-- main -->
     <main class="">
-        <section class="">
+        <section class="mt-4 font-BYekan">
+            <div class="flex-col items-center justify-center hidden px-8 sm:flex">
+                <div class="grid grid-cols-4 gap-2">
+                    <button class="box-content h-8 px-8 py-2 text-center border-gray-400 cursor-pointer tab-link" data-tab="tab-1">زنانه</button>
+                    <button class="box-content h-8 px-8 py-2 border-gray-400 cursor-pointe tab-link" data-tab="tab-2">مردانه</button>
+                    <button class="box-content h-8 px-8 py-2 border-gray-400 cursor-pointer tab-link" data-tab="tab-3">بچگانه</button>
+                    <button class="box-content h-8 px-8 py-2 border-gray-400 cursor-pointer tab-link" data-tab="tab-4">اکسسوری</button>
+                </div>
+                <!-- tab pictures -->
+                 <div id="tab-content__container">
+                    <div class="hidden tab-content" id="tab-1">hi im tab 1</div>
+                    <div class="hidden tab-content" id="tab-2">hi im tab 2</div>
+                    <div class="hidden tab-content" id="tab-3">hi im tab 3</div>
+                    <div class="hidden tab-content" id="tab-4">hi im tab 4</div>
+                 </div>
+
+            </div>
+            <!-- sm category -->
+            <div class="flex justify-between sm:hidden">
+                <div class="flex flex-col items-center justify-center w-full">
+                    <div class="overflow-hidden rounded-full w-14 h-14">
+                        <img src="../src/assets/pics/main-category/1.jpg" alt="womens clothes category">
+                    </div>
+                    <span class="w-full text-center">زنانه</span>
+                </div>
+    
+                <div class="flex flex-col items-center justify-center w-full">
+                    <div class="overflow-hidden rounded-full w-14 h-14">
+                        <img src="../src/assets/pics/main-category/2.jpg" alt="mens clothes category">
+                    </div>
+                    <span class="w-full text-center">مردانه</span>
+                </div>
+    
+                <div class="flex flex-col items-center justify-center w-full">
+                    <div class="overflow-hidden rounded-full w-14 h-14">
+                        <img src="../src/assets/pics/main-category/3.jpg" alt="children clothes category">
+                    </div>
+                    <span class="w-full text-center">بچگانه</span>
+                </div>
+    
+                <div class="flex flex-col items-center justify-center w-full">
+                    <div class="overflow-hidden rounded-full w-14 h-14">
+                        <img src="../src/assets/pics/main-category/4.jpg" alt="accessory category">
+                    </div>
+                    <span class="w-full text-center">اکسسوری</span>
+                </div>
+            </div>
         </section>
     </main>
 
