@@ -14,7 +14,7 @@ module.exports = {
         }
       },
       animation: {
-        'slide-slow': 'slideOpacity 1s',
+        'slide-slow': 'slideOpacity 1.3s',
       }
     },
   },
