@@ -11,7 +11,7 @@
 <!-- npm run dev -->
 <body>
     <!-- Header -->
-     <div class="h-full wrapper sm:h-56 md:h-[352px] lg:h-[454px] xl:h-[643px]">
+     <div class="h-full sm:h-56 md:h-[352px] lg:h-[454px] xl:h-[643px]">
         <header class="relative z-50 mt-4 sm:mt-8 sm:mx-4 font-BYekan">
             <div class="mx-2 xl:mx-12">
                 <div class="grid justify-between grid-cols-2 px-2 md:grid md:grid-cols-3 lg:flex">
@@ -47,12 +47,13 @@
                         </div>
                     </div>
 
+                    
                 </div>
             </div>
         </header>
         
         <!-- slider -->
-        <!-- <div class="w-full h-56 md sm:top-0 sm:left-0 sm:absolute sm:w-full sm:max-w-full -z-10 slider md:h-96 lg:h-[486px] xl:h-[675px] font-BYekan cursor-pointer">
+        <div class="w-full h-56 md sm:top-0 sm:left-0 sm:absolute sm:w-full sm:max-w-full -z-10 slider md:h-96 lg:h-[486px] xl:h-[675px] font-BYekan cursor-pointer">
 
             <div class="relative w-full h-full bg-gradient-to-t from-orange-500 to-amber-300 animate-slide-slow slides">
                 <div class="absolute bottom-0 left-0 grid w-full grid-cols-2 md:gap-4 md:w-full place-items-center sm:w-auto">
@@ -108,9 +109,21 @@
                         <img src="../src/assets/pics/slider-img/5.png" alt="sunglasses banner">
                     </div>
                 </div>
-            </div>
+            </div> 
         </div>
-    </div> -->
+        <div class="items-center justify-center hidden h-full mx-8 md:flex">
+            <button class="absolute p-2 bg-white bg-opacity-25 rounded-full cursor-pointer right-4" onclick="nextBtn()">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                </svg> 
+            </button>
+            <button class="absolute p-2 bg-white bg-opacity-25 rounded-full cursor-pointer left-4" onclick="prevBtn()">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75 3 12m0 0 3.75-3.75M3 12h18" />
+                </svg>                              
+            </button>
+        </div>
+    </div>
 
     <!-- dots -->
      <div class="z-50 items-center justify-center hidden w-full gap-1 my-4 md:flex row">
@@ -133,7 +146,7 @@
                 </div>
                 <!-- tab pictures -->
                  <div id="tab-content__container">
-                    <div class="hidden tab-content" id="tab-1">hi im tab 1</div>
+                    <div class="tab-content" id="tab-1">hi im tab 1</div>
                     <div class="hidden tab-content" id="tab-2">hi im tab 2</div>
                     <div class="hidden tab-content" id="tab-3">hi im tab 3</div>
                     <div class="hidden tab-content" id="tab-4">hi im tab 4</div>
