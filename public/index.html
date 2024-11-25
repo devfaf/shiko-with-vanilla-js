@@ -139,6 +139,9 @@
     <!-- main -->
     <main class="font-BYekan">
         <section class="sm:bg-gray-100 sm:py-4 font-BYekan">
+            <!-- <div class="mb-4 tabs"> <button class="px-4 py-2 mr-2 text-white bg-blue-500 tab-button" data-content="content1">Tab 1</button> <button class="px-4 py-2 mr-2 text-white bg-blue-500 tab-button" data-content="content2">Tab 2</button> <button class="px-4 py-2 mr-2 text-white bg-blue-500 tab-button" data-content="content3">Tab 3</button> <button class="px-4 py-2 text-white bg-blue-500 tab-button" data-content="content4">Tab 4</button> </div> <div id="content1" class="content active-content">Content for Tab 1</div> <div id="content2" class="content">Content for Tab 2</div> <div id="content3" class="content">Content for Tab 3</div> <div id="content4" class="content">Content for Tab 4</div> -->
+
+            
             <div class="flex-col items-center justify-center hidden px-8 text-gray-500 sm:flex sm:text-xl md:text-2xl">
                 <div class="grid grid-cols-4 gap-2 mb-4">
                     <button class="box-content h-8 px-5 py-2 text-center border-b-4 border-black cursor-pointer tab-link" data-tab="tab-1">زنانه</button>
@@ -146,8 +149,9 @@
                     <button class="box-content h-8 px-5 py-2 border-black cursor-pointer tab-link" data-tab="tab-3">بچگانه</button>
                     <button class="box-content h-8 px-5 py-2 border-black cursor-pointer tab-link" data-tab="tab-4">اکسسوری</button>
                 </div>
-                <!-- tab pictures -->
-                 <div id="tab-content__container bg-gray-100">
+                
+                 <div id="bg-gray-100">
+                    
                     <div class="gap-4 grid grid-cols-2 tab-content h-full sm:h-56 md:h-[352px] lg:h-[424px] xl:h-[624px]" id="tab-1">
                         <div class="h-auto col-span-2 overflow-hidden">
                             <img src="../src/assets/pics/main-category-desktop/womens/1.jpg" alt="">
@@ -159,8 +163,42 @@
                             <img src="../src/assets/pics/main-category-desktop/womens/3.jpg" alt="">
                         </div>
                     </div>
-                    <!-- <div class="tab-content" id="tab-2"></div> -->
-                    <!-- <div class="tab-content" id="tab-3"></div> -->
+                    
+                    <div class="gap-4 hidden grid-cols-2 tab-content h-full sm:h-56 md:h-[352px] lg:h-[424px] xl:h-[624px]" id="tab-1">
+                        <div class="h-auto col-span-2 overflow-hidden">
+                            <img src="../src/assets/pics/main-category-desktop/mens/1.jpg" alt="">
+                        </div>
+                        <div class="h-auto col-span-1 overflow-hidden">
+                            <img src="../src/assets/pics/main-category-desktop/mens/2.jpg" alt="">
+                        </div>
+                        <div class="h-auto col-span-1 overflow-hidden">
+                            <img src="../src/assets/pics/main-category-desktop/mens/3.jpg" alt="">
+                        </div>
+                    </div>
+                    
+                    <div class="gap-4 hidden grid-cols-2 tab-content h-full sm:h-56 md:h-[352px] lg:h-[424px] xl:h-[624px]" id="tab-1">
+                        <div class="h-auto col-span-2 overflow-hidden">
+                            <img src="../src/assets/pics/main-category-desktop/childrens/1.jpg" alt="">
+                        </div>
+                        <div class="h-auto col-span-1 overflow-hidden">
+                            <img src="../src/assets/pics/main-category-desktop/childrens/2.jpg" alt="">
+                        </div>
+                        <div class="h-auto col-span-1 overflow-hidden">
+                            <img src="../src/assets/pics/main-category-desktop/childrens/3.jpg" alt="">
+                        </div>
+                    </div>
+                    
+                    <div class="gap-4 hidden grid-cols-2 tab-content h-full sm:h-56 md:h-[352px] lg:h-[424px] xl:h-[624px]" id="tab-1">
+                        <div class="h-auto col-span-2 overflow-hidden">
+                            <img src="../src/assets/pics/main-category-desktop/accessory/1.jpg" alt="">
+                        </div>
+                        <div class="h-auto col-span-1 overflow-hidden">
+                            <img src="../src/assets/pics/main-category-desktop/accessory/2.jpg" alt="">
+                        </div>
+                        <div class="h-auto col-span-1 overflow-hidden">
+                            <img src="../src/assets/pics/main-category-desktop/accessory/3.jpg" alt="">
+                        </div>
+                    </div>
                  </div>
 
             </div>
@@ -196,17 +234,17 @@
             </div>
         </section>
         <section>
-            <div class="flex justify-between px-2 mx-2 my-4 text-base">
+            <div class="flex justify-between px-2 mx-2 my-4 text-base xl:mx-12 xl:px-4">
                 <h1>پرطرفدارترین ها</h1>
                 <a class="cursor-pointer text-cyan-500" href="#">مشاهده همه</a>
             </div>
         </section>
         
         <section class="w-full my-4 overflow-auto touch-auto">
-            <div class="px-2 py-4 mx-2 text-base">
+            <div class="px-2 py-4 mx-2 text-base xl:mx-12 xl:px-4">
                 <h1 class="font-semibold">حراج</h1>
             </div>
-            <div class="grid w-[1000px] grid-cols-5 gap-3 mx-4 touch-auto lg:mx-auto lg:w-auto lg:px-4">
+            <div class="grid w-[1000px] grid-cols-5 gap-3 mx-4 touch-auto lg:gap-6 lg:mx-auto lg:w-auto lg:px-4 xl:mx-12">
                 <div class="relative flex flex-col p-4 bg-gray-100">
                     <div class="absolute top-0 right-0 flex items-center h-8 font-bold text-white bg-pink-600 rounded-ee-lg">
                         <span class="px-2">35%</span></div>
@@ -300,6 +338,80 @@
                 
             </div>
         </section>
+
+        <section class="w-full my-4 sm:overflow-auto touch-auto">
+            <div class="px-2 py-4 mx-2 text-base xl:mx-12 xl:px-4">
+                <h1 class="font-semibold">پرفروش‌ترین‌ها</h1>
+            </div>
+            <div class="grid sm:w-[1000px] grid-cols-2 sm:grid-cols-5 gap-3 mx-4 touch-auto lg:gap-6 lg:mx-auto lg:w-auto lg:px-4 xl:mx-12">
+                <div class="relative flex flex-col p-4 bg-gray-100">
+                    
+                    <img src="../src/assets/pics/main-category-mobile/1.jpg" alt="">
+                    <div class="flex items-center justify-between pt-2 text-center">
+                        <p class="text-gray-500">نام برند</p>
+                        <div class="flex flex-col">
+                            <span class="text-sm text-gray-500 line-through">500,000
+                                <span>تومان</span>
+                            </span>
+                            <span class="font-semibold text-pink-600">325,000
+                                <span>تومان</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative flex flex-col p-4 bg-gray-100">
+                    
+                    <img src="../src/assets/pics/main-category-mobile/1.jpg" alt="">
+                    <div class="flex items-center justify-between pt-2 text-center">
+                        <p class="text-gray-500">نام برند</p>
+                        <div class="flex flex-col">
+                            <span class="text-sm text-gray-500 line-through">500,000
+                                <span>تومان</span>
+                            </span>
+                            <span class="font-semibold text-pink-600">325,000
+                                <span>تومان</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="relative flex flex-col p-4 bg-gray-100">
+
+                    <img src="../src/assets/pics/main-category-mobile/1.jpg" alt="">
+                    <div class="flex items-center justify-between pt-2 text-center">
+                        <p class="text-gray-500">نام برند</p>
+                        <div class="flex flex-col">
+                            <span class="text-sm text-gray-500 line-through">500,000
+                                <span>تومان</span>
+                            </span>
+                            <span class="font-semibold text-pink-600">325,000
+                                <span>تومان</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative flex flex-col p-4 bg-gray-100">
+                    
+                    <img src="../src/assets/pics/main-category-mobile/1.jpg" alt="">
+                    <div class="flex items-center justify-between pt-2 text-center">
+                        <p class="text-gray-500">نام برند</p>
+                        <div class="flex flex-col">
+                            <span class="text-sm text-gray-500 line-through">500,000
+                                <span>تومان</span>
+                            </span>
+                            <span class="font-semibold text-pink-600">325,000
+                                <span>تومان</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
     </main>
 
 </body>
