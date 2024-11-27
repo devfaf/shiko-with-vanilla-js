@@ -5,6 +5,7 @@ module.exports = {
     fontFamily: {
       Pacifico: "Pacifico",
       BYekan: "BYekan",
+      Lalezar:"Lalezar",
     },
     extend: {
       keyframes: {
