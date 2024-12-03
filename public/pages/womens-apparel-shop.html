@@ -1,11 +1,337 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>زنانه | فروشگاه اینترنتی لباس شیکو</title>
+    <link rel="stylesheet" href="../../src/output.css">
+    <link rel="icon" href="../../src/assets/logo/favicon.ico">
+    <script src="../../src/app.js" defer></script>
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/3d2299cc94.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    
+    <header class="relative z-50 mt-4 sm:mt-8 sm:mx-4 font-BYekan">
+        <div class="mx-2 xl:mx-12">
+            <div class="grid justify-between grid-cols-2 px-2 md:grid md:grid-cols-3 lg:flex">
+
+                <div class="flex items-center gap-2 md:grow md:justify-center md:order-2 lg:grid-cols-3">
+                    <a class="md:hidden" href="">
+                        <svg class="w-6 h-6 leading-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                        </svg>                  
+                    </a>
+                    <a class="text-2xl text-center lg:pb-4 lg:border-b-2 lg:border-black lg:w-96 sm:text-4xl font-Pacifico" href="#">
+                        Shiko
+                    </a>
+                </div>
+
+                <div class="flex justify-end text-sm lg:w-56 md:justify-start md:order-1 md:flex md:gap-2 md:items-center">
+                    <a href="">
+                        <svg class="w-6 h-6 text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+                        </svg>
+                    </a>
+                    <a class="hidden text-gray-500 md:inline" href="">
+                        وارد شوید
+                    </a>
+                </div>
+
+                <div class="grid max-w-full col-span-2 text-sm md:flex md:col-span-1 lg:w-56 sm:justify-start sm:order-3 sm:gap-2 sm:items-center">
+                    <div class="flex w-full p-1 my-4 bg-gray-100 rounded-sm sm:bg-transparent sm:pb-1 sm:border-b-[1px] sm:border-gray-400 ">
+                        <svg class="w-6 h-6 text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                            </svg>
+                        <input class="w-full text-gray-700 bg-gray-100 outline-none sm:bg-transparent placeholder:text-gray-500 ps-2 sm:placeholder:float-start" type="text" placeholder="جستجو کنید">  
+                    </div>
+                </div>
+            </div>
+
+            <nav class="justify-center hidden lg:pt-4 md:flex border-h-">
+                <a class="mx-4 text-sm text-gray-700 hover:font-semibold hover:text-black" href="#">زنانه</a>
+                <a class="mx-4 text-sm text-gray-700 hover:font-semibold hover:text-black" href="#">مردانه</a>
+                <a class="mx-4 text-sm text-gray-700 hover:font-semibold hover:text-black" href="#">بچگانه</a>
+                <a class="mx-4 text-sm text-gray-700 hover:font-semibold hover:text-black" href="#">اکسسوری</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="px-4 py-4 md:px-6 md:py-16 font-BYekan">
+        <!-- md and up layout -->
+        <div class="items-center justify-between hidden md:flex">
+            <div class="items-center justify-between hidden md:flex">
+                <div class="box-border flex items-center justify-center gap-2 px-4 py-2 border-2 border-transparent cursor-pointer hover:border-black">
+                    <span>لباس</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                      </svg>
+                </div>
+                <div class="box-border flex items-center justify-center gap-2 px-4 py-2 border-2 border-transparent cursor-pointer hover:border-black">
+                    <span>کیف</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                      </svg>                      
+                </div>
+                <div class="box-border flex items-center justify-center gap-2 px-4 py-2 border-2 border-transparent cursor-pointer hover:border-black">
+                    <span>کفش</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                      </svg>
+                      
+                </div>
+                <div class="box-border flex items-center justify-center gap-2 px-4 py-2 border-2 border-transparent cursor-pointer hover:border-black">
+                    <span>اکسسوری</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                      </svg>
+                      
+                </div>
+            </div>
+            <div class="box-border flex items-center justify-center gap-2 px-4 py-2 border-2 border-transparent cursor-pointer hover:border-black">
+                <div>محبوب‌‌ترین</div>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25" />
+                  </svg>
+                  
+            </div>
+        </div>
+        <!-- items -->
+        <div class="hidden grid-cols-3 gap-6 py-4 mx-4 md:grid touch-auto lg:gap-6 lg:mx-auto lg:w-auto lg:px-4 xl:mx-12">
+            <a href="#" class="relative flex flex-col p-4 bg-gray-100">
+                <div class="absolute top-0 right-0 flex items-center h-8 font-bold text-white bg-pink-600 rounded-ee-lg">
+                    <span class="px-2">35%</span></div>
+                
+                <img src="../../src/assets/pics/women-clothes/clothes/1.jpg" alt="">
+                <div class="flex items-center justify-between pt-2 text-center">
+                    <p class="text-gray-500">نام برند</p>
+                    <div class="flex flex-col">
+                        <span class="text-sm text-gray-500 line-through">500,000
+                            <span>تومان</span>
+                        </span>
+                        <span class="font-semibold text-pink-600">325,000
+                            <span>تومان</span>
+                        </span>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="relative flex flex-col p-4 bg-gray-100">
+                <div class="absolute top-0 right-0 flex items-center h-8 font-bold text-white bg-pink-600 rounded-ee-lg">
+                    <span class="px-2">35%</span></div>
+                
+                <img src="../../src/assets/pics/women-clothes/clothes/2.jpg" alt="">
+                <div class="flex items-center justify-between pt-2 text-center">
+                    <p class="text-gray-500">نام برند</p>
+                    <div class="flex flex-col">
+                        <span class="text-sm text-gray-500 line-through">500,000
+                            <span>تومان</span>
+                        </span>
+                        <span class="font-semibold text-pink-600">325,000
+                            <span>تومان</span>
+                        </span>
+                    </div>
+                </div>
+            </a>
+
+            
+            <a href="#" class="relative flex flex-col p-4 bg-gray-100">
+                <div class="absolute top-0 right-0 flex items-center h-8 font-bold text-white bg-pink-600 rounded-ee-lg">
+                    <span class="px-2">35%</span></div>
+                
+                <img src="../../src/assets/pics/women-clothes/clothes/3.jpg" alt="">
+                <div class="flex items-center justify-between pt-2 text-center">
+                    <p class="text-gray-500">نام برند</p>
+                    <div class="flex flex-col">
+                        <span class="text-sm text-gray-500 line-through">500,000
+                            <span>تومان</span>
+                        </span>
+                        <span class="font-semibold text-pink-600">325,000
+                            <span>تومان</span>
+                        </span>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="relative flex flex-col p-4 bg-gray-100">
+                <div class="absolute top-0 right-0 flex items-center h-8 font-bold text-white bg-pink-600 rounded-ee-lg">
+                    <span class="px-2">35%</span></div>
+                
+                <img src="../../src/assets/pics/women-clothes/clothes/4.jpg" alt="">
+                <div class="flex items-center justify-between pt-2 text-center">
+                    <p class="text-gray-500">نام برند</p>
+                    <div class="flex flex-col">
+                        <span class="text-sm text-gray-500 line-through">500,000
+                            <span>تومان</span>
+                        </span>
+                        <span class="font-semibold text-pink-600">325,000
+                            <span>تومان</span>
+                        </span>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="relative flex flex-col p-4 bg-gray-100">
+                <div class="absolute top-0 right-0 flex items-center h-8 font-bold text-white bg-pink-600 rounded-ee-lg">
+                    <span class="px-2">35%</span></div>
+                
+                <img src="../../src/assets/pics/women-clothes/clothes/5.jpg" alt="">
+                <div class="flex items-center justify-between pt-2 text-center">
+                    <p class="text-gray-500">نام برند</p>
+                    <div class="flex flex-col">
+                        <span class="text-sm text-gray-500 line-through">500,000
+                            <span>تومان</span>
+                        </span>
+                        <span class="font-semibold text-pink-600">325,000
+                            <span>تومان</span>
+                        </span>
+                    </div>
+                </div>
+            </a>
+            
+        </div>
+        
+        <!-- below md layout -->
+        <div class="flex items-start justify-center gap-4 text-sm sm:gap-8 md:hidden">
+            <a href="#" class="text-center">
+                <div class="overflow-hidden rounded-full">
+                    <img src="../../src/assets/pics/women-clothes/clothes/1.jpg" alt="">
+                </div>
+                <span>لباس زنانه</span>
+            </a>
+            <a href="#" class="text-center">
+                <div class="overflow-hidden rounded-full">
+                    <img src="../../src/assets/pics/women-clothes/bag/1.jpg" alt="">
+                </div>
+                <span>کفش زنانه</span>
+            </a>
+            <a href="#" class="text-center">
+                <div class="overflow-hidden rounded-full">
+                    <img src="../../src/assets/pics/women-clothes/shoes/1.jpg" alt="">
+                </div>
+                <span>کیف زنانه</span>
+            </a>
+            <a href="#" class="text-center">
+                <div class="overflow-hidden rounded-full">
+                    <img src="../../src/assets/pics/women-clothes/accessory/1.jpg" alt="">
+                </div>
+                <span>اکسسوری زنانه</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- tags -->
+    <div class="px-4 py-4 text-sm font-BYekan md:px-20 md:py-16">
+        <h2 class="py-4 font-semibold">زنانه</h2>
+        <div class="text-gray-500">
+            لباس زنانه - کفش زنانه - کیف زنانه - اکسسوری زنانه 
+        </div>
+        <p class="leading-6 text-gray-500">
+            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد کتابهای زیادی در شصت و سه درصد گذشته حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد.
+        </p>
+    </div>
+
+    <!-- footer -->
+    <footer>
+        <div class="flex flex-col text-gray-500 bg-gray-100 font-BYekan md:bg-white md:mx-8">
+            <div class="flex items-center justify-center gap-4 py-2 border-gray-300 md:hidden border-y-[1px]">
+                <div>
+                    ما را در شبکه های اجتماعی دنبال کنید
+                </div>
+                <div class="flex text-center">
+                    <i class="text-2xl fa-brands fa-instagram"></i>
+                </div>
+                <div class="flex text-center">
+                    <i class="text-2xl fa-brands fa-telegram"></i>                      
+                </div>
+            </div>
+            <div class="hidden mx-8 text-4xl text-black md:flex md:flex-row md:items-end md:py-2 font-Pacifico">
+                <a href="#">Shiko</a>
+                <div class="w-full h-[1px] bg-gray-300 mb-2 ms-4"></div>
+            </div>
+            <div class="grid grid-cols-2 py-4 md:grid-cols-4 place-items-start justify-items-center md:px-8">
+                <nav class="flex flex-col text-center gap-y-3 md:hidden">
+                    <div>
+                        <a href="#">پشتیبانی</a>
+                    </div>
+                    <div>
+                        <a href="#">سوالات متداول</a>
+                    </div>
+                    <div>
+                        <a href="#">بازگردانی کالا</a>
+                    </div>
+                    <div>
+                        <a href="#">شرایط استفاده</a>
+                    </div>
+                </nav>
+                <nav class="flex flex-col text-center gap-y-3 md:hidden">
+                    <div>
+                        <a href="#">حریم خصوصی</a>
+                    </div>
+                    <div>
+                        <a href="#">درباره ما</a>
+                    </div>
+                    <div>
+                        <a href="#">تماس با ما</a>
+                    </div>
+                </nav>
+                <nav class="hidden md:flex md:flex-col md:gap-y-3">
+                    <a class="text-xl text-black" href="#">خرید</a>
+                    <a href="#">زنانه</a>
+                    <a href="#">مردانه</a>
+                    <a href="#">بچگانه</a>
+                    <a href="#">اکسسوری</a>
+                </nav>
+                <nav class="hidden md:flex md:flex-col md:gap-y-3">
+                    <a class="text-xl text-black" href="#">خدمات مشتریان</a>
+                    <a href="#">پاسخ به سوالات متداول</a>
+                    <a href="#">رویه های بازگرداندن کالا</a>
+                    <a href="#">شرایط استفاده</a>
+                    <a href="#">حریم خصوصی</a>
+                </nav>
+                <nav class="hidden md:flex md:flex-col md:gap-y-3">
+                    <a class="text-xl text-black" href="#">اطلاعات شیکو</a>
+                    <a href="#">درباره ما</a>
+                    <a href="#">تماس با ما</a>
+                </nav>
+                <div class="hidden md:flex md:flex-col md:gap-y-3">
+                    <a class="text-xl text-black" href="#">شبکه های اجتماعی</a>
+                    <div class="flex justify-between md:text-4xl">
+                        <div class="flex text-center">
+                            <i class="cursor-pointer fa-brands fa-instagram"></i>
+                        </div>
+                        <div class="flex text-center">
+                            <i class="cursor-pointer fa-brands fa-telegram"></i>                      
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="flex flex-col items-center border-t-[1px] border-gray-300 md:hidden">
+                <h2 class="py-4">فروشگاه اینترنتی مد و لباس شیکو</h2>
+                <div class="px-4 pb-4">
+                    <p class="text-sm leading-6">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.</p>
+                </div>
+            </div>
+            <div class="hidden md:px-4 md:mx-4 md:grid md:grid-cols-3 md:py-8">
+                <div class="flex flex-col col-span-2">
+                    <h2 class="py-2 text-xl text-black">فروشگاه اینترنتی مد و لباس شیکو
+                    </h2>
+                    <div class="pb-4">
+                        <p class="text-sm leading-6">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.</p>
+                    </div>
+                </div>
+                <div class="flex flex-row w-full mt-8 ps-4">
+                    <div class="w-full m-2 border-2"></div>
+                    <div class="w-full m-2 border-2"></div>
+                    <div class="w-full m-2 border-2"></div>
+                </div>
+            </div>
+
+            <div class="flex items-center justify-center py-4 border-t-[1px] md:border-t-[1px] border-gray-300 md:mx-8">
+                <p class="text-xs">All rights reserved &copy</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
