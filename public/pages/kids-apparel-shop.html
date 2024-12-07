@@ -60,27 +60,48 @@
     <!-- items -->
     <div class="px-4 py-4 md:px-6 md:py-16 font-BYekan">
         <!-- md and up layout -->
-        <div class="items-center justify-between hidden md:flex">
-            <div class="items-center justify-between hidden md:flex">
-                <div class="box-border flex items-center justify-center gap-2 px-4 py-2 border-2 border-transparent cursor-pointer hover:border-black">
-                    <span>لباس نوزاد</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
-                      </svg>
+        <div class="items-start justify-between hidden md:flex">
+            <div class="items-start justify-between hidden md:flex">
+                <div class="box-border relative flex flex-col items-start justify-center gap-2 px-4 py-2">
+                    <div class="flex items-center justify-center w-full gap-2 px-4 py-2 border-2 border-transparent cursor-pointer baby-clothes hover:border-black">
+                        <div class="selected">لباس نوزاد</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                        </svg>
+                    </div>
+                    <ul class="absolute z-40 flex-col w-full bg-white border-2 border-black top-14 clothes-menu">
+                        <li class="box-border flex items-center justify-center w-full gap-2 px-4 py-2 border-[1px] cursor-pointer hover:bg-gray-100">
+                            <span>لباس دخترانه</span>
+                        </li>
+                        <li class="box-border flex items-center justify-center w-full gap-2 px-4 py-2 border-[1px] cursor-pointer hover:bg-gray-100">
+                            <span>لباس پسرانه</span>
+                        </li>
+                    </ul>
                 </div>
-                <div class="box-border flex items-center justify-center gap-2 px-4 py-2 border-2 border-transparent cursor-pointer hover:border-black">
-                    <span>اکسسوری نوزاد</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
-                      </svg>                      
+                <div class="box-border relative flex flex-col items-start justify-center gap-2 px-4 py-2">
+                    <div class="flex items-center justify-center gap-2 px-4 py-2 border-2 border-transparent cursor-pointer hover:border-black baby-accessory">
+                        <div class="selected">اکسسوری نوزاد</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                        </svg>
+                    </div>
+                      
+                    <ul class="absolute z-40 flex-col w-full bg-white border-2 border-black top-14 clothes-menu">
+                        <li class="box-border flex items-center justify-center w-full gap-2 px-4 py-2 cursor-pointer border-[1px] hover:bg-gray-100">
+                            <span>اکسسوری دخترانه</span>
+                        </li>
+                        <li class="box-border flex items-center justify-center w-full gap-2 px-4 py-2 cursor-pointer border-[1px] hover:bg-gray-100">
+                            <span>اکسسوری پسرانه</span>
+                        </li>
+                    </ul>   
                 </div>
             </div>
             
-            <div class="box-border flex items-center justify-center gap-2 px-4 py-2 border-2 border-transparent cursor-pointer hover:border-black">
+            <div class="box-border flex items-start justify-center gap-2 px-4 py-2 border-2 border-transparent cursor-pointer hover:border-black">
                 <div>محبوب‌‌ترین</div>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25" />
-                  </svg>
+                </svg>
                   
             </div>
         </div>
@@ -120,19 +141,19 @@
                          <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
                      </svg> 
                  </a>
-                <a href="#" class="text-center">
+                <a href="#" class="text-center baby-accessory">
                     <div class="overflow-hidden rounded-full">
                         <img src="../../src/assets/pics/childrens-clothes/baby-clothes/accessory/3.jpg" alt="">
                     </div>
                     <span>اکسسوری نوزاد</span>
                 </a>
-                <a href="#" class="text-center">
+                <a href="#" class="text-center boys-accessory">
                     <div class="overflow-hidden rounded-full">
                         <img src="../../src/assets/pics/childrens-clothes/boys-clothes/accessory/3.jpg" alt="">
                     </div>
                     <span>اکسسوری پسرانه</span>
                 </a>
-                <a href="#" class="text-center">
+                <a href="#" class="text-center girls-accessory">
                     <div class="overflow-hidden rounded-full">
                         <img src="../../src/assets/pics/childrens-clothes/girls-clothes/accessory/1.jpg" alt="">
                     </div>
