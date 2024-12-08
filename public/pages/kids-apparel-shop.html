@@ -22,7 +22,7 @@
                             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                         </svg>                  
                     </a>
-                    <a class="text-2xl text-center lg:pb-4 lg:border-b-2 lg:border-black lg:w-96 sm:text-4xl font-Pacifico" href="#">
+                    <a class="text-2xl text-center lg:pb-4 lg:border-b-2 lg:border-black lg:w-96 sm:text-4xl font-Pacifico" href="../index.html">
                         Shiko
                     </a>
                 </div>
@@ -49,10 +49,10 @@
             </div>
 
             <nav class="justify-center hidden lg:pt-4 md:flex border-h-">
-                <a class="mx-4 text-sm text-gray-700 hover:font-semibold hover:text-black" href="#">زنانه</a>
-                <a class="mx-4 text-sm text-gray-700 hover:font-semibold hover:text-black" href="#">مردانه</a>
-                <a class="mx-4 text-sm text-gray-700 hover:font-semibold hover:text-black" href="#">بچگانه</a>
-                <a class="mx-4 text-sm text-gray-700 hover:font-semibold hover:text-black" href="#">اکسسوری</a>
+                <a class="mx-4 text-sm text-gray-700 hover:font-semibold hover:text-black" href="./womens-apparel-shop.html">زنانه</a>
+                <a class="mx-4 text-sm text-gray-700 hover:font-semibold hover:text-black" href="./mens-apparel-shop.html">مردانه</a>
+                <a class="mx-4 text-sm text-gray-700 hover:font-semibold hover:text-black" href="./kids-apparel-shop.html">بچگانه</a>
+                <a class="mx-4 text-sm text-gray-700 hover:font-semibold hover:text-black" href="./accessory-shop.html">اکسسوری</a>
             </nav>
         </div>
     </header>
@@ -70,16 +70,16 @@
                         </svg>
                     </div>
                     <ul class="absolute z-40 flex-col hidden w-full bg-white border-2 border-black select-none top-14 clothes-lg-menu">
-                        <li class="select-none box-border flex items-center justify-center w-full gap-2 px-4 py-2 border-[1px] cursor-pointer hover:bg-gray-100 option">
+                        <li class="select-none box-border flex items-center justify-center w-full gap-2 px-4 py-2 border-[1px] cursor-pointer hover:bg-gray-100 option" data-menuitem="girls">
                             <span>لباس دخترانه</span>
                         </li>
-                        <li class="select-none box-border flex items-center justify-center w-full gap-2 px-4 py-2 border-[1px] cursor-pointer hover:bg-gray-100 option">
+                        <li class="select-none box-border flex items-center justify-center w-full gap-2 px-4 py-2 border-[1px] cursor-pointer hover:bg-gray-100 option" data-menuitem="boys">
                             <span>لباس پسرانه</span>
                         </li>
                     </ul>
                 </div>
                 <div class="box-border relative flex flex-col items-start justify-center gap-2 px-4 py-2 w-52 dropdown">
-                    <div class="flex items-center justify-center w-full gap-1 px-4 py-2 border-2 border-transparent cursor-pointer select-none hover:border-black baby-accessory select-item">
+                    <div class="flex items-center justify-center w-full gap-1 px-4 py-2 border-2 border-transparent cursor-pointer select-none hover:border-black baby-accessory select-item" data-menuitem="babyAcc">
                         <div class="selected">اکسسوری نوزاد</div>
                         <svg class="w-4 h-4 transition-all caret" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
@@ -87,10 +87,10 @@
                     </div>
                       
                     <ul class="absolute z-40 flex-col hidden w-full bg-white border-2 border-black select-none top-14 clothes-lg-menu">
-                        <li class="select-none box-border flex items-center justify-center w-full gap-2 px-4 py-2 cursor-pointer border-[1px] hover:bg-gray-100 option">
+                        <li class="select-none box-border flex items-center justify-center w-full gap-2 px-4 py-2 cursor-pointer border-[1px] hover:bg-gray-100 option" data-menuitem="girlsAcc">
                             <span>اکسسوری دخترانه</span>
                         </li>
-                        <li class="select-none box-border flex items-center justify-center w-full gap-2 px-4 py-2 cursor-pointer border-[1px] hover:bg-gray-100 option">
+                        <li class="select-none box-border flex items-center justify-center w-full gap-2 px-4 py-2 cursor-pointer border-[1px] hover:bg-gray-100 option" data-menuitem="boysAcc">
                             <span>اکسسوری پسرانه</span>
                         </li>
                     </ul>   
@@ -98,7 +98,7 @@
             </div>
             
             <div class="box-border flex items-start justify-center gap-2 px-4 py-2 border-2 border-transparent cursor-pointer hover:border-black">
-                <div>محبوب‌‌ترین</div>
+                <div class="select-none">محبوب‌‌ترین</div>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25" />
                 </svg>
