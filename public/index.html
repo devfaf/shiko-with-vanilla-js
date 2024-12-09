@@ -15,7 +15,35 @@
 <body>
     <!-- Header -->
      <div class="h-full sm:h-48 md:h-[352px] lg:h-[454px] xl:h-[643px]">
-        <header class="relative z-50 mt-4 sm:mt-8 sm:mx-4 font-BYekan">
+         <div class="absolute top-0 z-50 w-full h-screen p-12 bg-white">
+            <div class="absolute top-0 left-0 grid w-full grid-cols-2 p-6 text-3xl shadow-md">
+                <svg class="top-0 right-0 w-8 h-8 cursor-pointer" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                </svg>
+                <a class="text-start font-Pacifico" href="index.html">Shiko</a>
+            </div>
+            <section class="flex flex-col items-center justify-center px-10 mx-auto my-20 py-7 font-BYekan">
+                <h3 class="pb-11 text-[26px] text-center">
+                    ورود یا ثبت نام
+                </h3>
+                <form class="max-w-96 w-full py-8 px-10 bg-white border-[1px]">
+                    <div>
+                        <input id="login-input" class="w-full p-2 border-b-[1px] border-black outline-none placeholder:text-sm max-w-80 caret-sky-500" type="text" placeholder="شماره موبایل یا ایمیل">
+                    </div>
+                    <button class="w-full p-2 mt-24 text-lg text-white bg-gray-300 mb-7">
+                        ادامه
+                    </button>
+                    <div class="text-[13px] leading-6 text-center text-gray-500">
+                        با ورود و یا ثبت نام در شیکو شما <a href="#" class="text-sky-500">شرایط و قوانین</a> استفاده از تمام سرویس های سایت شیکو و <a href="#" class="text-sky-500">قوانین حریم خصوصی</a> آن را می‌پذیرید.
+                    </div>
+                </form>
+                <div class="flex flex-col items-center justify-center mt-5">
+                    <p class="text-xs text-gray-500">Login powered by</p>
+                    <span class="text-2xl font-bold text-red-600 uppercase font-Pacifico">devfaf</span>
+                </div>
+            </section>
+         </div>
+        <header class="relative z-40 mt-4 sm:mt-8 sm:mx-4 font-BYekan">
             <div class="mx-2 xl:mx-12">
                 <div class="grid justify-between grid-cols-2 px-2 md:grid md:grid-cols-3 lg:flex">
     
@@ -30,14 +58,28 @@
                         </a>
                     </div>
     
-                    <div class="flex justify-end text-sm lg:w-56 md:justify-start md:order-1 md:flex md:gap-2 md:items-center">
-                        <a href="">
-                            <svg class="w-6 h-6 text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor">
+                    <div class="relative flex justify-end text-sm lg:w-56 md:justify-start md:order-1 md:flex md:gap-2 md:items-center">
+                        <div id="mini-cart">
+                            <svg class="relative z-50 w-6 h-6 text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
                             </svg>
-                        </a>
-                        <a class="hidden text-gray-500 transition-all md:inline" href="#">
+                            <div id="mini-cart-cont" class="absolute right-0 hidden p-8 bg-white rounded-md shadow-lg -bottom-56">
+                                <div class="flex flex-col items-center justify-center text-lg font-bold text-center w-44">
+                                    <svg class="w-24 h-24 rotate-12" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                                    </svg>
+                                    <span class="py-6">
+                                        سبد خرید شما خالی است
+                                    </span>             
+                                </div>
+                            </div>
+                        </div>
+                        <a id="login-register" class="relative justify-center hidden text-gray-500 transition-all md:inline" href="#">
                             وارد شوید
+                            <div class="login-register-icon absolute w-32 px-2 rounded-sm py-1 text-[12px] text-center text-white bg-black -left-8 top-8 cursor-pointer hidden">
+                              <span class="text-xs">مشاهده حساب کاربری</span>
+                              <i class="absolute w-4 h-4 text-black rotate-180 left-14 -top-2 fa fa-caret-down">&#xf0d7;</i>
+                            </div>
                         </a>
                     </div>
     
@@ -572,7 +614,7 @@
          <!-- usp section -->
           <div class="flex justify-center">
             <div class="flex justify-around w-full p-4 text-xs text-gray-500 md:text-base font-BYekan lg:text-2xl xl:justify-center xl:gap-48">
-                <a href="#">
+                <div class="cursor-pointer">
                     <div class="flex flex-col items-center">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-12 h-12 md:w-24 md:h-24 lg:w-32 lg:h-32">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 21v-7.5a.75.75 0 0 1 .75-.75h3a.75.75 0 0 1 .75.75V21m-4.5 0H2.36m11.14 0H18m0 0h3.64m-1.39 0V9.349M3.75 21V9.349m0 0a3.001 3.001 0 0 0 3.75-.615A2.993 2.993 0 0 0 9.75 9.75c.896 0 1.7-.393 2.25-1.016a2.993 2.993 0 0 0 2.25 1.016c.896 0 1.7-.393 2.25-1.015a3.001 3.001 0 0 0 3.75.614m-16.5 0a3.004 3.004 0 0 1-.621-4.72l1.189-1.19A1.5 1.5 0 0 1 5.378 3h13.243a1.5 1.5 0 0 1 1.06.44l1.19 1.189a3 3 0 0 1-.621 4.72M6.75 18h3.75a.75.75 0 0 0 .75-.75V13.5a.75.75 0 0 0-.75-.75H6.75a.75.75 0 0 0-.75.75v3.75c0 .414.336.75.75.75Z" />
@@ -582,9 +624,9 @@
                             <p>تحویل سریع و ارزان</p>
                         </div>
                     </div>
-                </a>
+                </div>
     
-                <a href="#">
+                <div class="cursor-pointer">
                     <div class="flex flex-col items-center">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-12 h-12 md:w-24 md:h-24 lg:w-32 lg:h-32">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
@@ -596,9 +638,9 @@
                             </p>
                         </div>
                     </div>
-                </a>
+                </div>
     
-                <a href="#">
+                <div class="cursor-pointer">
                     <div class="flex flex-col items-center">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-12 h-12 md:w-24 md:h-24 lg:w-32 lg:h-32">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 0 0 2.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 0 0-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75 2.25 2.25 0 0 0-.1-.664m-5.8 0A2.251 2.251 0 0 1 13.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m0 0H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V9.375c0-.621-.504-1.125-1.125-1.125H8.25ZM6.75 12h.008v.008H6.75V12Zm0 3h.008v.008H6.75V15Zm0 3h.008v.008H6.75V18Z" />
@@ -608,7 +650,7 @@
                             <p>ضمانت کالای باکیفیت</p>
                         </div>
                     </div>
-                </a>
+                </div>
               </div>
           </div>
     </main>
@@ -627,7 +669,7 @@
                 </div>
             </div>
             <div class="hidden mx-8 text-4xl text-black md:flex md:flex-row md:items-end md:py-2 font-Pacifico">
-                <a href="#">Shiko</a>
+                <a href="index.html">Shiko</a>
                 <div class="w-full h-[1px] bg-gray-300 mb-2 ms-4"></div>
             </div>
             <div class="grid grid-cols-2 py-4 md:grid-cols-4 place-items-start justify-items-center md:justify-items-start md:px-8">
@@ -658,10 +700,10 @@
                 </nav>
                 <nav class="hidden md:flex md:flex-col md:gap-y-3">
                     <a class="text-xl text-black" href="#">خرید</a>
-                    <a href="#">زنانه</a>
-                    <a href="#">مردانه</a>
-                    <a href="#">بچگانه</a>
-                    <a href="#">اکسسوری</a>
+                    <a href="./pages/womens-apparel-shop.html">زنانه</a>
+                    <a href="./pages/mens-apparel-shop.html">مردانه</a>
+                    <a href="./pages/kids-apparel-shop.html">بچگانه</a>
+                    <a href="./pages/accessory-shop.html">اکسسوری</a>
                 </nav>
                 <nav class="hidden md:flex md:flex-col md:gap-y-3">
                     <a class="text-xl text-black" href="#">خدمات مشتریان</a>
