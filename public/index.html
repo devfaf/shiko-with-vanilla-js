@@ -43,6 +43,19 @@
                 </div>
             </section>
          </div>
+         <!-- search area -->
+         <div id="searchbar-cont" class="absolute top-0 z-50 hidden w-full p-24 bg-gray-200 opacity-95 h-3/5 font-BYekan">
+            <div class="flex flex-col items-center justify-center w-full mx-auto">
+                <div class="relative flex w-full max-w-5xl mx-auto">
+                    <div class="absolute left-0 -top-12">
+                        <svg id="sreachbar-close" class="w-8 h-8 text-black cursor-pointer" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                        </svg>                      
+                    </div>
+                    <input class="caret-sky-500 outline-none bg-transparent w-full p-2 border-b-[1px] border-black" type="text" placeholder="جستجو کنید...">
+                </div>
+            </div>
+         </div>
         <header class="relative z-40 mt-4 sm:mt-8 sm:mx-4 font-BYekan">
             <div class="mx-2 xl:mx-12">
                 <div class="grid justify-between grid-cols-2 px-2 md:grid md:grid-cols-3 lg:flex">
@@ -88,7 +101,7 @@
                             <svg class="w-6 h-6 text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
                                 </svg>
-                            <input class="w-full text-gray-700 bg-gray-100 outline-none sm:bg-transparent placeholder:text-gray-500 ps-2 sm:placeholder:float-start" type="text" placeholder="جستجو کنید">  
+                            <input id="search-input" class="w-full text-gray-700 bg-gray-100 outline-none sm:bg-transparent placeholder:text-gray-500 ps-2 sm:placeholder:float-start" type="text" placeholder="جستجو کنید">  
                         </div>
                     </div>
                 </div>
