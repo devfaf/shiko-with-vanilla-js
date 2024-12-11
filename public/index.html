@@ -7,13 +7,15 @@
     <title>فروشگاه اینترنتی لباس شیکو</title>
     <link rel="stylesheet" href="../src/output.css">
     <link rel="icon" href="../src/assets/logo/favicon.ico">
-    <script src="../src/app.js" defer></script>
     <script src="../src/assets/js/header.js" defer></script>
+    <script src="../src/app.js" defer></script>
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/3d2299cc94.js" crossorigin="anonymous"></script>
 </head>
 <!-- npm run dev -->
 <body>
+    <!-- black bg -->
+    <div class="absolute top-0 right-0 z-40 hidden w-full h-full bg-black opacity-55"></div>
     <!-- Header -->
      <div class="h-full sm:h-48 md:h-[352px] lg:h-[454px] xl:h-[643px]">
          <div id="register-page" class="absolute top-0 z-50 hidden w-full h-screen p-12 bg-white">
@@ -44,6 +46,49 @@
                 </div>
             </section>
          </div>
+         <!-- mobile hamburgur menu -->
+         <div id="ham-menu" class="absolute top-0 left-0 z-50 hidden px-6 py-4 bg-white font-BYekan md:hidden">
+            <div class="flex items-center justify-between w-full py-2 mb-4 text-center cursor-pointer">
+                <div id="close-ham-menu">
+                    <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                    </svg>                      
+                </div>
+                <button class="px-4 py-2 text-center border-2 border-black ">ورود و ثبت نام</button>
+            </div>
+            <div id="" class="flex justify-between border-b-[1px] border-black mb-4 py-1">
+                <input class="w-full pr-2 outline-none caret-sky-500" type="text" placeholder="جستجو در دسته بندی ها">
+                <svg class="w-5 h-5 text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                </svg>                  
+            </div>
+            <div>
+                <div class="relative flex items-center justify-center w-full mb-4">
+                    <a href="./pages/womens-apparel-shop.html">
+                        <img src="../src/assets/pics/menu-category/1.jpg" alt="">
+                    </a>
+                    <a href="./pages/womens-apparel-shop.html" class="absolute text-3xl text-center right-16">زنانه</a>
+                </div>
+                <div class="relative flex items-center justify-center w-full mb-4">
+                    <a href="./pages/mens-apparel-shop.html">
+                        <img src="../src/assets/pics/menu-category/2.jpg" alt="">
+                    </a>
+                    <a href="./pages/mens-apparel-shop.html" class="absolute text-3xl text-center right-16">مردانه</a>
+                </div>
+                <div class="relative flex items-center justify-center w-full mb-4">
+                    <a href="./pages/kids-apparel-shop.html">
+                        <img src="../src/assets/pics/menu-category/3.jpg" alt="">
+                    </a>
+                    <a href="./pages/kids-apparel-shop.html" class="absolute text-3xl text-center right-16">بچگانه</a>
+                </div>
+                <div class="relative flex items-center justify-center w-full mb-4">
+                    <a href="./pages/accessory-shop.html">
+                        <img src="../src/assets/pics/menu-category/4.jpg" alt="">
+                    </a>
+                    <a href="./pages/accessory-shop.html" class="absolute text-3xl text-center right-16">اکسسوری</a>
+                </div>
+            </div>
+        </div>
          <!-- search area -->
          <div id="searchbar-cont" class="absolute top-0 z-50 hidden w-full p-24 bg-gray-200 opacity-95 h-3/5 font-BYekan">
             <div class="flex flex-col items-center justify-center w-full mx-auto">
@@ -62,7 +107,7 @@
                 <div class="grid justify-between grid-cols-2 px-2 md:grid md:grid-cols-3 lg:flex">
     
                     <div class="flex items-center gap-2 md:grow md:justify-center md:order-2 lg:grid-cols-3">
-                        <div class="md:hidden">
+                        <div id="hammenu-icon" class="cursor-pointer md:hidden">
                             <svg class="w-6 h-6 leading-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                             </svg>                  
@@ -202,7 +247,6 @@
 
     <!-- main -->
     <main class="font-BYekan">
-        <!-- category section -->
         <section class="sm:bg-gray-100 sm:py-4 font-BYekan">
             <div class="flex-col items-center justify-center hidden px-8 text-gray-500 sm:flex sm:text-xl md:text-2xl">
                 <div class="grid grid-cols-4 gap-2 mb-4">
