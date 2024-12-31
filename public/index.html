@@ -54,7 +54,7 @@
                         <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
                     </svg>                      
                 </div>
-                <button id="ham-login-btn" class="px-4 py-2 text-center border-2 border-black ">ورود و ثبت نام</button>
+                <button id="ham-login-btn" class="px-4 py-2 text-center border-2 border-black">ورود و ثبت نام</button>
             </div>
             <div id="" class="flex justify-between border-b-[1px] border-black mb-4 py-1">
                 <input class="w-full pr-2 outline-none caret-sky-500" type="text" placeholder="جستجو در دسته بندی ها">
@@ -98,8 +98,11 @@
                             <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
                         </svg>                      
                     </div>
-                    <input class="caret-sky-500 outline-none bg-transparent w-full p-2 border-b-[1px] border-black" type="text" placeholder="جستجو کنید...">
+                    <input id="search-input" class="caret-sky-500 outline-none bg-transparent w-full p-2 border-b-[1px] border-black placeholder:text-xl" type="text" placeholder="جستجو کنید...">
                 </div>
+            </div>
+            <div id="search-results" class="w-full max-w-5xl px-2 pt-4 text-blue-500 font-BYekan lg:mx-auto">
+                <!-- <div>لباس بچگانه </div> -->
             </div>
          </div>
         <header class="relative z-40 mt-4 sm:mt-8 sm:mx-4 font-BYekan">
@@ -147,7 +150,7 @@
                             <svg class="w-6 h-6 text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
                                 </svg>
-                            <input id="search-input" class="w-full text-gray-700 bg-gray-100 outline-none sm:bg-transparent placeholder:text-gray-500 ps-2 sm:placeholder:float-start" type="text" placeholder="جستجو کنید">  
+                            <input class="w-full text-gray-700 bg-gray-100 outline-none search-input sm:bg-transparent placeholder:text-gray-500 ps-2 sm:placeholder:float-start" type="text" placeholder="جستجو کنید">  
                         </div>
                     </div>
                 </div>
