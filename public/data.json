@@ -522,34 +522,34 @@
           "name": "apparel",
           "items": [
             {
-              "id": 81,
+              "id": 1,
+              "name": "کلاه نوزاد",
+              "price": 150000,
+              "image": "../src/assets/pics/childrens-clothes/baby-clothes/accessory/1.jpg"
+            },
+            {
+              "id": 16,
+              "name": "تی‌شرت پسرانه",
+              "price": 250000,
+              "image": "../src/assets/pics/childrens-clothes/boys-clothes/clothes/1.jpg"
+            },
+            {
+              "id": 21,
+              "name": "هدبند دخترانه",
+              "price": 150000,
+              "image": "../src/assets/pics/childrens-clothes/girls-clothes/accessory/1.jpg"
+            },
+            {
+              "id": 51,
               "name": "تی‌شرت زنانه",
               "price": 300000,
-              "image": "../src/assets/pics/women-clothes/clothes/1.jpg"
+              "image": "../src/assets/pics/women-clothes/apparel/1.jpg"
             },
             {
-              "id": 82,
-              "name": "شلوار زنانه",
-              "price": 350000,
-              "image": "../src/assets/pics/women-clothes/clothes/2.jpg"
-            },
-            {
-              "id": 83,
-              "name": "پیراهن زنانه",
-              "price": 400000,
-              "image": "../src/assets/pics/women-clothes/clothes/3.jpg"
-            },
-            {
-              "id": 84,
-              "name": "ژاکت زنانه",
-              "price": 450000,
-              "image": "../src/assets/pics/women-clothes/clothes/4.jpg"
-            },
-            {
-              "id": 85,
-              "name": "کت زنانه",
-              "price": 500000,
-              "image": "../src/assets/pics/women-clothes/clothes/5.jpg"
+              "id": 31,
+              "name": "تی‌شرت مردانه",
+              "price": 300000,
+              "image": "../src/assets/pics/men-clothes/apparel/1.jpg"
             }
           ]
         }
@@ -562,34 +562,34 @@
           "name": "apparel",
           "items": [
             {
-              "id": 86,
+              "id": 91,
               "name": "تی‌شرت زنانه",
               "price": 300000,
               "image": "../src/assets/pics/women-clothes/apparel/1.jpg"
             },
             {
-              "id": 87,
-              "name": "شلوار زنانه",
-              "price": 350000,
-              "image": "../src/assets/pics/women-clothes/apparel/2.jpg"
-            },
-            {
-              "id": 88,
-              "name": "پیراهن زنانه",
-              "price": 400000,
-              "image": "../src/assets/pics/women-clothes/apparel/3.jpg"
-            },
-            {
-              "id": 89,
-              "name": "ژاکت زنانه",
+              "id": 47,
+              "name": "ساعت مچی مردانه",
               "price": 450000,
-              "image": "../src/assets/pics/women-clothes/apparel/4.jpg"
+              "image": "../src/assets/pics/men-clothes/accessory/2.jpg"
             },
             {
-              "id": 90,
-              "name": "کت زنانه",
-              "price": 500000,
-              "image": "../src/assets/pics/women-clothes/apparel/5.jpg"
+              "id": 8,
+              "name": "شلوار نوزاد",
+              "price": 220000,
+              "image": "../src/assets/pics/childrens-clothes/baby-clothes/clothes/3.jpg"
+            },
+            {
+              "id": 23,
+              "name": "گردنبند دخترانه",
+              "price": 180000,
+              "image": "../src/assets/pics/childrens-clothes/girls-clothes/accessory/3.jpg"
+            },
+            {
+              "id": 15,
+              "name": "عینک آفتابی پسرانه",
+              "price": 200000,
+              "image": "../src/assets/pics/childrens-clothes/boys-clothes/accessory/5.jpg"
             }
           ]
         }
@@ -608,28 +608,28 @@
               "image": "../src/assets/pics/women-clothes/apparel/1.jpg"
             },
             {
-              "id": 92,
-              "name": "شلوار زنانه",
-              "price": 350000,
-              "image": "../src/assets/pics/women-clothes/apparel/2.jpg"
-            },
-            {
-              "id": 93,
-              "name": "پیراهن زنانه",
-              "price": 400000,
-              "image": "../src/assets/pics/women-clothes/apparel/3.jpg"
-            },
-            {
-              "id": 94,
-              "name": "ژاکت زنانه",
+              "id": 47,
+              "name": "ساعت مچی مردانه",
               "price": 450000,
-              "image": "../src/assets/pics/women-clothes/apparel/4.jpg"
+              "image": "../src/assets/pics/men-clothes/accessory/2.jpg"
             },
             {
-              "id": 95,
-              "name": "کت زنانه",
-              "price": 500000,
-              "image": "../src/assets/pics/women-clothes/apparel/5.jpg"
+              "id": 8,
+              "name": "شلوار نوزاد",
+              "price": 220000,
+              "image": "../src/assets/pics/childrens-clothes/baby-clothes/clothes/3.jpg"
+            },
+            {
+              "id": 23,
+              "name": "گردنبند دخترانه",
+              "price": 180000,
+              "image": "../src/assets/pics/childrens-clothes/girls-clothes/accessory/3.jpg"
+            },
+            {
+              "id": 15,
+              "name": "عینک آفتابی پسرانه",
+              "price": 200000,
+              "image": "../src/assets/pics/childrens-clothes/boys-clothes/accessory/5.jpg"
             }
           ]
         }
