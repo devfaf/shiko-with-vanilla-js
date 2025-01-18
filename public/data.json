@@ -158,7 +158,7 @@
           "items": [
             {
               "id": 21,
-              "name": "هدبند دخترانه",
+              "name": "عینک دخترانه",
               "price": 150000,
               "image": "../src/assets/pics/childrens-clothes/girls-clothes/accessory/1.jpg"
             },
@@ -378,7 +378,7 @@
           "items": [
             {
               "id": 51,
-              "name": "تی‌شرت زنانه",
+              "name": "پالتو زنانه",
               "price": 300000,
               "image": "../src/assets/pics/women-clothes/apparel/1.jpg"
             },
@@ -525,31 +525,36 @@
               "id": 1,
               "name": "کلاه نوزاد",
               "price": 150000,
+              "disprice": 98500,
               "image": "../src/assets/pics/childrens-clothes/baby-clothes/accessory/1.jpg"
             },
             {
               "id": 16,
               "name": "تی‌شرت پسرانه",
               "price": 250000,
+              "disprice":163000,
               "image": "../src/assets/pics/childrens-clothes/boys-clothes/clothes/1.jpg"
             },
             {
               "id": 21,
-              "name": "هدبند دخترانه",
+              "name": "عینک دخترانه",
               "price": 150000,
+              "disprice": 98500,
               "image": "../src/assets/pics/childrens-clothes/girls-clothes/accessory/1.jpg"
             },
             {
               "id": 51,
-              "name": "تی‌شرت زنانه",
+              "name": "پالتو زنانه",
               "price": 300000,
-              "image": "../src/assets/pics/women-clothes/apparel/1.jpg"
+              "disprice":195000,
+              "image": "../src/assets/pics/women-clothes/clothes/1.jpg"
             },
             {
               "id": 31,
               "name": "تی‌شرت مردانه",
               "price": 300000,
-              "image": "../src/assets/pics/men-clothes/apparel/1.jpg"
+              "disprice":195000,
+              "image": "../src/assets/pics/men-clothes/clothes/1.jpg"
             }
           ]
         }
