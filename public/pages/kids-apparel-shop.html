@@ -204,17 +204,17 @@
         <div class="items-start justify-between hidden md:flex md:px-8">
             <div class="items-start justify-between hidden md:flex">
                 <div class="box-border relative flex flex-col items-start justify-center w-48 gap-2 py-2 dropdown">
-                    <div class="flex items-center justify-center w-full gap-1 px-2 py-2 border-2 border-transparent cursor-pointer select-none baby-clothes hover:border-black select-item">
+                    <div class="flex items-center justify-center w-full gap-1 px-2 py-2 border-2 border-transparent cursor-pointer select-none hover:border-black select-item baby-clothes-btn">
                         <div class="selected">لباس نوزاد</div>
                         <svg class="w-4 h-4 transition-all caret" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
                         </svg>
                     </div>
                     <ul id="clothes-menu" class="absolute z-40 flex-col hidden w-full bg-white border-2 border-black select-none top-14 clothes-lg-menu">
-                        <li class="select-none box-border flex items-center justify-center w-full gap-2 px-4 py-2 border-[1px] cursor-pointer hover:bg-gray-100 option" data-menuitem="girls">
+                        <li class="girls-clothes-btn select-none box-border flex items-center justify-center w-full gap-2 px-4 py-2 border-[1px] cursor-pointer hover:bg-gray-100 option" data-menuitem="girls">
                             <span>لباس دخترانه</span>
                         </li>
-                        <li class="select-none box-border flex items-center justify-center w-full gap-2 px-4 py-2 border-[1px] cursor-pointer hover:bg-gray-100 option" data-menuitem="boys">
+                        <li class="boys-clothes-btn select-none box-border flex items-center justify-center w-full gap-2 px-4 py-2 border-[1px] cursor-pointer hover:bg-gray-100 option" data-menuitem="boys">
                             <span>لباس پسرانه</span>
                         </li>
                     </ul>
@@ -250,19 +250,19 @@
         <!-- below md layout -->
          <div class="mobile-menu">
              <div class="flex items-start justify-center gap-4 text-sm sm:gap-8 md:hidden mobile-menu-items">
-                 <a href="#" class="text-center clothes-menu">
+                 <a href="#" class="text-center clothes-menu baby-clothes-btn">
                      <div class="overflow-hidden rounded-full">
                          <img src="../../src/assets/pics/childrens-clothes/baby-clothes/clothes/1.jpg" alt="">
                      </div>
                      <span>لباس نوزاد</span>
                  </a>
-                 <a href="#" class="text-center boys-clothes">
+                 <a href="#" class="text-center boys-clothes-btn">
                      <div class="overflow-hidden rounded-full">
                          <img src="../../src/assets/pics/childrens-clothes/boys-clothes/clothes/2.jpg" alt="">
                      </div>
                      <span>لباس پسرانه</span>
                  </a>
-                 <a href="#" class="text-center girls-clothes">
+                 <a href="#" class="text-center girls-clothes-btn">
                      <div class="overflow-hidden rounded-full">
                          <img src="../../src/assets/pics/childrens-clothes/girls-clothes/clothes/2.jpg" alt="">
                      </div>
@@ -304,7 +304,11 @@
 
          </div>
          <!-- all contents -->
-         <div class="p-4 font-BYekan lg:px-8" id="item-container">
+         <div class="p-4 font-BYekan lg:px-8">
+            <div class="py-4">
+                <div id="item-container" class="grid grid-cols-2 gap-3 touch-auto lg:gap-6 md:grid-cols-3 xl:grid-cols-4">
+                </div>
+            </div>
          </div>
     </div>
 
